@@ -1,0 +1,15 @@
+Approach for Lineage Problem Statement.
+1. Will take the given query in common table expression.
+2. Add pivot function t get the column names in extraction list as a a column value.
+3. I will take the column value with I have extracted using Pivot in CTE and join 
+   it with all_columns table (table in oracle which contains the column and table details in DB)
+   in main query
+4. Will take all 4 column names and table associate to it using union all.
+
+5. Output will look like
+
+Column Name     |    Table Name
+SWB_CNTRY_ID    |  CNTRY_MULTI_DEF_CD_T
+CNTRY_TYPE_CD   |  CNTRY_MULTI_DEF_CD_T
+DW_EFF_DT       |  CNTRY_MULTI_DEF_CD_T
+DW_AS_OF_DT     |  CNTRY_MULTI_DEF_CD_S
